@@ -7,6 +7,10 @@ body {
   background-color: whitesmoke;
 }
 
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 main {
   background-color: white;
   padding: 16px;
@@ -20,3 +24,13 @@ main {
   border-radius: 50%;
 }
 
+  a.photo{
+    transition: padding 0.5s;
+  }
+  a.photo:hover{
+    padding: 10px;
+  }
+
+    a.photo:hover{
+    padding: 10px;
+  }
