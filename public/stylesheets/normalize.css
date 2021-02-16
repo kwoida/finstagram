@@ -120,7 +120,7 @@ strong {
  */
 
 dfn {
-  font-style: italic;
+  font-style: thin italic;
 }
 
 /**
@@ -226,7 +226,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family: FreeMono, monospace;
   font-size: 1em;
 }
 
@@ -402,7 +402,7 @@ textarea {
  */
 
 optgroup {
-  font-weight: bold;
+  font-weight: thin italic;
 }
 
 /* Tables
