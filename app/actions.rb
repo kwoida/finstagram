@@ -71,8 +71,12 @@ post '/finstagram_posts' do
 end
 
 get '/finstagram_posts/:id' do
-  @finstagram_post = FinstagramPost.find(params[:id])   # find the finstagram post with the ID from the URL
-  erb(:"finstagram_posts/show")               # render app/views/finstagram_posts/show.erb
+  @finstagram_post = FinstagramPost.find_by(id: params[:id])
+  if @finstagram_post
+    erb(:"finstagram_posts/show")
+  else
+    halt(404, erb(:'errors/404'))
+  end
 end
 
 post '/comments' do
